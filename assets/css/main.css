@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.layout-width {
+    padding: 0 6rem;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #dbe0e0;
+    font-size: 1rem;
+    background: linear-gradient(109.8deg, #102431 0%, #0E1113 50.52%, #23152E 100%);
+    line-height: 2;
+    font-weight: 300;
+}
+
+section {
+    height: 90vh;
+}
+
+section#jadwal {
+    padding-top: 5rem;
+    height: 100vh;
+}
+
+section.galeri {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    height: max-content;
+    
+}
+
+/* Custom Animation */
+
+@-webkit-keyframes up-down {
+    0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    }
+
+    50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+
+    100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    }
+}
+@keyframes up-down {
+    0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    }
+
+    50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+
+    100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    }
+}
+
+/* End of Custom Animation */
+
+/* Navbar Style */
+
+nav {
+    background: rgba(14, 17, 19, 0.32);
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 16px 32px rgba(245, 246, 246, 0.04);
+}
+
+nav span.logo-text {
+    font-size: 1.25rem;
+    margin-left: .5rem;
+}
+
+nav .nav-links a, a {
+    text-decoration: none;
+    margin-right: 2.5rem;
+    color: #eff0f0;
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(89.18deg, #FFA775 1.06%, #F553E5 50.01%, #5295FA 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+}
+
+.nav-cta a:hover {
+    color: #eff0f0;
+}
+
+.sosial-media a:hover {
+    color: #eff0f0;
+}
+
+nav .nav-logo a {
+    margin-right: 0;
+}
+
+nav .nav-logo a:hover {
+    color: #eff0f0;
+}
+
+nav .nav-links .link-end {
+    margin-right: 0;
+}
+
+.nav-cta a {
+    text-decoration: none;
+    background: linear-gradient(88.68deg, #FFA775 1.7%, #F553E5 64.81%, #5295FA 127.92%);
+    padding: 0.75rem 1rem;
+    border-radius: .75rem;
+    font-weight: 700;
+    margin-right: 0;
+}
+
+.sosial-media a {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0.75rem 1rem;
+    border: 2px solid rgba(245, 83, 229, 1);
+    border-radius: .75rem;
+    margin-right: 1rem;
+    background: linear-gradient(89.18deg, #FFA775 1.06%, #F553E5 50.01%, #5295FA 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* End of Navbar Style */
+
+/* Biodata Style */
+
+span.tagline {
+    padding: 0.5rem .75rem;
+    background: linear-gradient(89.18deg, #FFA775 1.06%, #F553E5 50.01%, #5295FA 98.95%);
+    border-radius: .5rem;
+    font-weight: 900;
+    font-size: .75rem;
+}
+
+h1.headline {
+    font-size: 3rem;
+    background: linear-gradient(89.18deg, #FFA775 1.06%, #F553E5 50.01%, #5295FA 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+}
+
+h2.headline {
+    font-size: 2.5rem;
+    background: linear-gradient(89.18deg, #FFA775 1.06%, #F553E5 50.01%, #5295FA 98.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+}
+
+section.biodata .biodata-right {
+    margin-right: 2rem;
+    -webkit-animation: up-down 3s infinite;
+    animation: up-down 3s infinite;
+}
+
+.biodata-right img {
+    border-radius: 5rem;
+    border: 1.5rem solid;
+    border-image: linear-gradient(89.18deg, #FFA775 1.06%, #F553E5 50.01%, #5295FA 98.95%);
+    width: 22rem;
+    transition: ease .5s;
+}
+
+.biodata-right img:hover {
+    width: 25rem;
+    rotate: 360deg;
+}
+/* End of Biodata Style */
+
+/* Start of Jadwal Style */
+.card {
+    background: rgba(51, 60, 68, 0.32);
+}
+
+.card:hover {
+    rotate: -2deg;
+    transition: ease .5s;
+}
+
+.card-body img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: .75rem;
+}
+/* End of Jadwal Style */
